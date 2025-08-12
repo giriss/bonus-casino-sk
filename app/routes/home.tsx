@@ -1,7 +1,162 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import NavBar from "~/components/NavBar";
+import Main from "~/components/Main";
 
-export function meta({}: Route.MetaArgs) {
+const images = [
+  [
+    "https://bonuscasinosk.com/grandmondial/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/grandmondial.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/zodiaccasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/07/zodiac-casino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/luxurycasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/luxurycasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/villento/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/villento.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/playerspalacecasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/playerspalacecasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/casino-classic/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/casino-classic.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/blackjackballroom/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/blackjackballroom.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/gtcasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/gtcasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/yukongoldcasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/07/yukongoldcasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/paripesa/",
+    "https://bonuscasinosk.com/wp-content/uploads/2025/02/paripesa.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/fortuna/",
+    "https://bonuscasinosk.com/wp-content/uploads/2024/04/fortuna.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/spinanga/",
+    "https://bonuscasinosk.com/wp-content/uploads/2024/03/spinanga.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/22bet/",
+    "https://bonuscasinosk.com/wp-content/uploads/2024/01/22bet.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/ninecasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2023/12/ninecasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/rabona/",
+    "https://bonuscasinosk.com/wp-content/uploads/2023/07/rabona.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/nomini/",
+    "https://bonuscasinosk.com/wp-content/uploads/2023/06/nomini.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/wazamba/",
+    "https://bonuscasinosk.com/wp-content/uploads/2023/06/wazamba.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/playmillion/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/12/playmillion.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/euromania/",
+    "https://bonuscasinosk.com/wp-content/uploads/2023/01/euromania.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/casinoaction/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/casinoaction.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/captaincookscasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/captaincookscasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/colosseumcasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/colosseumcasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/grandhotelcasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/grandhotelcasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/ukcasinoclub/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/ukcasinoclub.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/quatrocasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/quatrocasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/casinoshare/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/casinoshare.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/aztecrichescasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/aztecrichescasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/challengecasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/challengecasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/nostalgiacasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/08/nostalgiacasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/goldenreefcasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/07/goldenreefcasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/luckyemperorcasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/07/luckyemperorcasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/musichallcasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/07/musichallcasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/virtualcitycasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/07/virtualcitycasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/vegascountrycasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/07/vegascountrycasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/richreelscasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/07/richreelscasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/vegasslotcasino/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/07/vegasslotcasino.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/casinokingdom/",
+    "https://bonuscasinosk.com/wp-content/uploads/2023/02/casino-kingdom.svg"
+  ],
+  [
+    "https://bonuscasinosk.com/bet365/",
+    "https://bonuscasinosk.com/wp-content/uploads/2022/12/bet365.svg"
+  ]
+]
+export function meta({ }: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
     { name: "description", content: "Welcome to React Router!" },
@@ -9,5 +164,24 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <NavBar />
+      <Main className="pt-5 prose">
+        <h1>Slovenské kasína online</h1>
+        <p>Zostavili sme zoznam všetkých online kasín, ktoré prešli našimi testami a sú teraz dostupné pre nové registrácie. V recenziách kasín sa dozviete viac o funkciách jednotlivých značiek, či majú výplatné limity a aké hry ponúkajú. Pridali sme aj klady a zápory jednotlivých prevádzkovateľov a utajované informácie o kvalite hernej služby.</p>
+        <div className="grid grid-cols-5 gap-4">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+          <div>04</div>
+          <div>05</div>
+          <div>06</div>
+          <div>07</div>
+          <div>08</div>
+          <div>09</div>
+        </div>
+      </Main>
+    </>
+  )
 }
