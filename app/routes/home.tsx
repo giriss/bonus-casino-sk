@@ -4,158 +4,59 @@ import Main from "~/components/Main";
 
 const images = [
   [
-    "https://bonuscasinosk.com/grandmondial/",
+    "Grand Mondial Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/grandmondial.svg"
   ],
   [
-    "https://bonuscasinosk.com/zodiaccasino/",
+    "Zodiac Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/07/zodiac-casino.svg"
   ],
   [
-    "https://bonuscasinosk.com/luxurycasino/",
+    "Luxury Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/luxurycasino.svg"
   ],
   [
-    "https://bonuscasinosk.com/villento/",
+    "Villento Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/villento.svg"
   ],
   [
-    "https://bonuscasinosk.com/playerspalacecasino/",
+    "Players Palace Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/playerspalacecasino.svg"
   ],
   [
-    "https://bonuscasinosk.com/casino-classic/",
+    "Casino Classic",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/casino-classic.svg"
   ],
   [
-    "https://bonuscasinosk.com/blackjackballroom/",
+    "Blackjack Ballroom Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/blackjackballroom.svg"
   ],
   [
-    "https://bonuscasinosk.com/gtcasino/",
+    "Golden Tiger Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/gtcasino.svg"
   ],
   [
-    "https://bonuscasinosk.com/yukongoldcasino/",
+    "Yukon Gold Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/07/yukongoldcasino.svg"
   ],
   [
-    "https://bonuscasinosk.com/paripesa/",
-    "https://bonuscasinosk.com/wp-content/uploads/2025/02/paripesa.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/fortuna/",
-    "https://bonuscasinosk.com/wp-content/uploads/2024/04/fortuna.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/spinanga/",
-    "https://bonuscasinosk.com/wp-content/uploads/2024/03/spinanga.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/22bet/",
-    "https://bonuscasinosk.com/wp-content/uploads/2024/01/22bet.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/ninecasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2023/12/ninecasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/rabona/",
-    "https://bonuscasinosk.com/wp-content/uploads/2023/07/rabona.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/nomini/",
-    "https://bonuscasinosk.com/wp-content/uploads/2023/06/nomini.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/wazamba/",
-    "https://bonuscasinosk.com/wp-content/uploads/2023/06/wazamba.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/playmillion/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/12/playmillion.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/euromania/",
-    "https://bonuscasinosk.com/wp-content/uploads/2023/01/euromania.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/casinoaction/",
+    "Casino Action",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/casinoaction.svg"
   ],
   [
-    "https://bonuscasinosk.com/captaincookscasino/",
+    "Captain Cooks Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/captaincookscasino.svg"
   ],
   [
-    "https://bonuscasinosk.com/colosseumcasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/08/colosseumcasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/grandhotelcasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/08/grandhotelcasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/ukcasinoclub/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/08/ukcasinoclub.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/quatrocasino/",
+    "Quatro Casino",
     "https://bonuscasinosk.com/wp-content/uploads/2022/08/quatrocasino.svg"
   ],
   [
-    "https://bonuscasinosk.com/casinoshare/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/08/casinoshare.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/aztecrichescasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/08/aztecrichescasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/challengecasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/08/challengecasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/nostalgiacasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/08/nostalgiacasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/goldenreefcasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/07/goldenreefcasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/luckyemperorcasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/07/luckyemperorcasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/musichallcasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/07/musichallcasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/virtualcitycasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/07/virtualcitycasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/vegascountrycasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/07/vegascountrycasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/richreelscasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/07/richreelscasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/vegasslotcasino/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/07/vegasslotcasino.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/casinokingdom/",
+    "Casino Kingdom",
     "https://bonuscasinosk.com/wp-content/uploads/2023/02/casino-kingdom.svg"
-  ],
-  [
-    "https://bonuscasinosk.com/bet365/",
-    "https://bonuscasinosk.com/wp-content/uploads/2022/12/bet365.svg"
   ]
-]
+] as const
+
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
@@ -170,17 +71,59 @@ export default function Home() {
       <Main className="pt-5 prose">
         <h1>Slovenské kasína online</h1>
         <p>Zostavili sme zoznam všetkých online kasín, ktoré prešli našimi testami a sú teraz dostupné pre nové registrácie. V recenziách kasín sa dozviete viac o funkciách jednotlivých značiek, či majú výplatné limity a aké hry ponúkajú. Pridali sme aj klady a zápory jednotlivých prevádzkovateľov a utajované informácie o kvalite hernej služby.</p>
-        <div className="grid grid-cols-5 gap-4">
-          <div>01</div>
-          <div>02</div>
-          <div>03</div>
-          <div>04</div>
-          <div>05</div>
-          <div>06</div>
-          <div>07</div>
-          <div>08</div>
-          <div>09</div>
+        <div className="grid grid-cols-5 gap-4 mb-10">
+          {images.map(([k, v]) => (
+            <div key={k} className="card bg-base-100 shadow-sm">
+              <figure className="p-2">
+                <img className="h-32" src={v} alt="Shoes" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title self-center text-center">{k}</h2>
+              </div>
+            </div>
+          ))}
         </div>
+        <h1>Profesionáli online kasína</h1>
+        <p>Neskôr sa ukáže, že počet hráčov, ktorí sa zamerali na herné platformy na internete, výrazne vzrástol. Možno neponúkajú atmosféru živej hry ako kamenné kasína, no vynikajú niekoľkými výhodami:</p>
+        <ul>
+          <li>Vyššie RTP v slotoch (93 – 99 %)</li>
+          <li>Možnosť registrácie cez akýkoľvek typ zariadenia</li>
+          <li>Rýchly prístup k hrám cez mobilnú aplikáciu</li>
+          <li>Spoľahlivý softvér, ktorý prešiel testami známych laboratórií</li>
+          <li>Okamžité platby bez poplatkov</li>
+          <li>Priamy prenos z miestností kasína so skutočnými dílermi</li>
+        </ul>
+        <p>Žijeme v dynamickom svete, ktorý si vyžaduje, aby sme boli neustále v pohybe. Ak vám vaša práca neumožňuje tráviť viac času hraním kasínových hier, môžete si hru stiahnuť a hrať na diaľku. Aplikácie pre smartfóny sú podporované zariadeniami iOS a Android a verzia mobilnej webovej stránky založená na webovej stránke pre počítače je vždy k dispozícii pre iné operačné systémy.</p>
+        <h1>Ako hodnotíme kasína</h1>
+        <p>Ako čoskoro uvidíte v recenziách našich kasínových stránok, vyhodnocujeme priemerné hodnotenie všetkých operátorov. Je založená na štyroch hlavných faktoroch:</p>
+        <ul>
+          <li>Spôsoby platby (vklady / výbery)</li>
+          <li>Softvér a kasínové hry</li>
+          <li>Zákaznícky servis</li>
+          <li>Bonusy</li>
+        </ul>
+        <p>Kvalitu služieb určujeme podľa medzinárodných štandardov a na základe nich hodnotíme kasíno. V recenzii značky samozrejme upozorňujeme na mnoho ďalších funkcií, ako je licencia, mobilita a živé kasíno.</p>
+        <h1>Sú online platformy bezpečné?</h1>
+        <p>Hoci sa online hranie rozvinulo pomerne rýchlo, stále existujú zákazníci, ktorí sa obávajú o bezpečnosť svojich osobných údajov a svojich financií. Takéto obavy sú úplne neopodstatnené, keďže online kasína spĺňajú predbežné požiadavky. Dodržiavajú sa aj v pravidlách hry.</p>
+        <p>V priebehu niekoľkých rokov spoločnosti prechádzajú licenčným procesom a platia dane v určitých jurisdikciách. Okrem toho musia poskytovať certifikované kasínové hry, ktoré boli schválené regulačnými orgánmi organizovanými laboratóriami ako iTechLabs a eCogra.</p>
+        <p>Na ochranu bezpečnosti osobných údajov a platieb sa používajú certifikáty SSL so 128-bitovým alebo 256-bitovým šifrovaným kľúčom. Vďaka tomu sú prístupné pre cudzincov a chráni sa dôvernosť zákazníkov.</p>
+        <p>Dohliadaní prevádzkovatelia ukladajú povinnosť overiť si účet kópiou dokladov totožnosti. Zákazníci posielajú jasné obrázky, ktoré sú kontrolované autorizovanými zástupcami. Kontroluje sa vek zákazníka, ako aj to, či sú údaje zaregistrované pri registrácii platné.</p>
+        <h1>Existujú nejaké online kasínové bonusy?</h1>
+        <p>Konkurencia medzi internetovými kasínami je dobrá vec pre zákazníkov, ktorí dostávajú celkom atraktívne ponuky. Prevádzkovatelia hier dávajú bonusy pri registrácii na webových stránkach a sú to percentá z vkladu. Existujú aj VIP kluby, ktoré zhromažďujú najaktívnejších zákazníkov, ktorí môžu získať ďalšie darčeky a pravidelné bonusy bez vkladu.</p>
+        <p>Čím aktívnejšie budete hrať v online kasíne, tým štedrejšia a pravidelnejšia bude osobná ponuka. Najobľúbenejšími bonusmi sú balíčky bezplatných zatočení automatov, pretože peniaze získané prostredníctvom nich nespĺňajú požiadavky na stávkovanie.</p>
+        <p>V našich recenziách online kasín sa dozviete o aktuálnych akciách a o tom, ako sa ich môžete zúčastniť. Pri výbere online kasína sa odporúča skontrolovať zoznam ponúk a pripojiť sa k čo najväčšiemu počtu webových stránok so skvelými ponukami.</p>
+        <h1>Ako fungujú platby v kasíne?</h1>
+        <p>Ďalším dôležitým aspektom zahrnutým v recenzii platformy online kasína je zoznam platobných metód. Pridali sme takéto informácie pre všetky kasína – ktoré meny sú akceptované a aké sú spôsoby výberu / vkladu.</p>
+        <p>Je dôležité, aby boli spôsoby platby praktické, aby ste sa pri hraní cítili dostatočne pokojne a bezpečne. Limity sú rôzne, no väčšinou začínajú na 10 eurách a siahajú až do 100 000 eur za jeden výber. Finančné transakcie do/z online kasína vo všeobecnosti nie sú spoplatnené, s výnimkou bankových prevodov, ktoré sú spoplatnené poplatkom 1-2%.</p>
+        <p>Najpopulárnejšie spôsoby platby v kasíne:</p>
+        <ul>
+          <li>Bankové karty a kreditné karty</li>
+          <li>E-peňaženky</li>
+          <li>Kryptomena</li>
+          <li>Predplatené kupóny</li>
+          <li>bankový prevod</li>
+          <li>Mobilné platby</li>
+        </ul>
       </Main>
     </>
   )
