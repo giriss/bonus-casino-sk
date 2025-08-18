@@ -3,6 +3,7 @@ import type { ReactNode } from "react"
 import banner from "./zodiac-casino-bonus.png"
 import plus18 from "./18plus.svg"
 import gamplingTherapy from "./gambling-therapy.svg"
+import NavBar from "../NavBar"
 
 interface MainProps {
   className?: string
@@ -12,7 +13,8 @@ interface MainProps {
 const Main = ({ children, className }: MainProps) => {
   return (
     <>
-      <main className={clsx("w-full max-w-9/10 m-auto", className)}>
+      <NavBar />
+      <main className={clsx("w-full max-w-8/10 m-auto pt-2 pb-5", className)}>
         <div className="pb-5">
           <img className="m-auto" src={banner} alt="banner" />
         </div>
