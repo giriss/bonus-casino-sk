@@ -14,43 +14,82 @@ const Casino = () => {
 
   return (
     <Main>
-      <div className="hero bg-base-200">
-        <div className="hero-content flex-col lg:flex-row">
-          <div className="w-[200px] h-[200px] rounded-lg shadow-2xl p-3 align-middle flex">
-            <img
-              src={casino.imageURL}
-            />
-          </div>
-          <div className="w-3xl text-center">
-            <p className="text-xl font-bold pb-2">Uvítací bonus</p>
-            <ShinyText speedInMs={3_000}>
-              <p className="text-4xl font-bold pb-2">{casino.welcomeBonus.title}</p>
-            </ShinyText>
-            <p className="text-xl font-bold pb-4">{casino.welcomeBonus.subtitle}</p>
-            <button className="btn btn-primary">NAVŠTÍVIŤ</button>
-            <p className="text-sm">18+ | Podmienky</p>
-          </div>
-          <div className="stats shadow">
-            <div className="stat bg-white">
-              <div className="stat-figure text-primary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="inline-block h-8 w-8 stroke-current"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div className="stat-title">Total Games</div>
-              <div className="stat-value text-primary">900+</div>
+      <div className="grid grid-cols-4 gap-4">
+        <div className="col-span-3 bg-base-200 shadow-md rounded-box p-10 content-center">
+          <div className="flex flex-row justify-evenly">
+            <div className="w-[200px] h-[200px] rounded-lg shadow-2xl p-3 align-middle flex">
+              <img src={casino.imageURL} />
+            </div>
+            <div className="text-center">
+              <p className="text-xl font-bold pb-2">Uvítací bonus</p>
+              <ShinyText speedInMs={3_000}>
+                <p className="text-4xl font-bold pb-2">{casino.welcomeBonus.title}</p>
+              </ShinyText>
+              <p className="text-xl font-bold pb-4">{casino.welcomeBonus.subtitle}</p>
+              <button className="btn btn-primary">NAVŠTÍVIŤ</button>
+              <p className="text-sm">18+ | Podmienky</p>
             </div>
           </div>
+        </div>
+        <div>
+          <ul className="list bg-base-100 rounded-box shadow-md">
+            <li className="list-row">
+              <div className="list-col-grow">
+                <div>Celkový počet hier</div>
+              </div>
+              <div className="font-bold">900+</div>
+            </li>
+            <li className="list-row">
+              <div className="list-col-grow">
+                <div>Min. Vklad/výber</div>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 text-green-500">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+            </li>
+            <li className="list-row">
+              <div className="list-col-grow">
+                <div>Živé kasíno</div>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 text-green-500">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+            </li>
+            <li className="list-row">
+              <div className="list-col-grow">
+                <div>Mobilné kasíno</div>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 text-green-500">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+            </li>
+            <li className="list-row">
+              <div className="list-col-grow">
+                <div>Živý chat</div>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 text-green-500">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+            </li>
+            <li className="list-row">
+              <div className="list-col-grow">
+                <div>Vernostný / VIP program</div>
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 text-green-500">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </Main>
